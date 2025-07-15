@@ -13,4 +13,3 @@ int main()
     printf("%d", number);
     return 0;
 }
-

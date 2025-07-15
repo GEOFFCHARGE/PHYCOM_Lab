@@ -10,4 +10,3 @@ int main()
     printf("Ascii Z: %d", ascii_Z);
     return 0;
 }
-

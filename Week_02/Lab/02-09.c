@@ -21,4 +21,3 @@ int main()
     printf("%c", five + 1);
     return 0;
 }
-

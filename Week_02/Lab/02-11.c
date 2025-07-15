@@ -9,4 +9,3 @@ int main()
     printf("%d%d", number % 1000, number / 1000);
     return 0;
 }
-

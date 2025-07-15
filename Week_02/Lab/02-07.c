@@ -23,4 +23,3 @@ int main()
     printf("GPA: %.2f\n", g);
     return 0;
 }
-

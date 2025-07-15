@@ -23,4 +23,3 @@ int main()
     printf("%.3f\n", f_number);
     return 0;
 }
-

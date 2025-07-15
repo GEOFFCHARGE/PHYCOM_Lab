@@ -16,4 +16,3 @@ int main()
     printf("Person 3: %s", person3);
     return 0;
 }
-
