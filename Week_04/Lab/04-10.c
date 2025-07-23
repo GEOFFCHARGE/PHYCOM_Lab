@@ -9,22 +9,22 @@ int main()
     if (milestone >= 0 && milestone <= 5.032)
     {
     	printf("Bangkok");
-	}
-	else if (milestone > 5.032 && milestone <= 35.477)
+    }	
+    else if (milestone > 5.032 && milestone <= 35.477)
     {
     	printf("Samut Prakarn");
-	}
-	else if (milestone > 35.477 && milestone <= 52.900)
+    }
+    else if (milestone > 35.477 && milestone <= 52.900)
     {
-    	printf("Chachoengsao");
-	}
-	else if (milestone > 52.900 && milestone <= 58.855)
+	printf("Chachoengsao");
+    }
+    else if (milestone > 52.900 && milestone <= 58.855)
     {
     	printf("Chon Buri");
-	}
-	else
-	{
-		printf("InValid");
-	}
+    }
+    else
+    {
+	printf("InValid");
+    }
     return 0;
 }
