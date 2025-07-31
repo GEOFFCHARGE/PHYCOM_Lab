@@ -1,6 +1,6 @@
 // Quiz 02-01: Format Specifier
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -17,4 +17,4 @@ int main()
     printf("Character: %c\n", value3);
     printf("String: %s", value4);
     return 0;
-};
+}
