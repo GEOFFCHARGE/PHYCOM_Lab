@@ -1,6 +1,6 @@
 // Quiz 02-02: Hello Student
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -17,4 +17,4 @@ int main()
     printf("Name: %s %s\n", fn, ln);
     printf("Nickname: %s", nn);
     return 0;
-};
+}
