@@ -1,6 +1,6 @@
 // Lab 03-02 Sum and Average
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -17,4 +17,4 @@ int main()
     printf("Summation is %.2f\n", na);
     printf("Average is %.3f", na / 4.0);
     return 0;
-};
+}
