@@ -1,6 +1,6 @@
 // Lab 03-10 BMI
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -11,4 +11,4 @@ int main()
     h *= 0.01;
     printf("%f", kg / (h * h));
     return 0;
-};
+}

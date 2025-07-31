@@ -1,7 +1,7 @@
 // Lab 03-06 Can price rate
 
-# include <stdio.h>
-# include <math.h>
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {
@@ -16,4 +16,4 @@ int main()
     printf("Volume : %.2lfml\n", v);
     printf("Baht/ml : %.4lf", price / v);
     return 0;
-};
+}

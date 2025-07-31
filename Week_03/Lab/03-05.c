@@ -1,6 +1,6 @@
 // Lab 03-05 Perimeter of rectangle
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -10,4 +10,4 @@ int main()
     scanf("%lf", &l);
     printf("Perimeter of rectangle = %.4lf units", (w * 2) + (l * 2));
     return 0;
-};
+}

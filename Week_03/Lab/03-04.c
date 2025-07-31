@@ -1,7 +1,7 @@
 // Lab 03-04 Arithmetic
 
-# include <stdio.h>
-# include <math.h>
+#include <stdio.h>
+#include <math.h>
 
 int main()
 {
@@ -13,4 +13,4 @@ int main()
     printf("The product of the given numbers : %.6lf\n", n1 * n2);
     printf("The quotient of the given numbers : %.6lf", n1 / n2);
     return 0;
-};
+}

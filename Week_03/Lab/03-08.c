@@ -1,6 +1,6 @@
 // Lab 03-08 Datetime
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -19,4 +19,4 @@ int main()
     s -= m * 60;
     printf("%d s = %d d %d h %d m %d s", t, d, h, m, s);
     return 0;
-};
+}
