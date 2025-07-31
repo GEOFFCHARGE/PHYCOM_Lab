@@ -6,7 +6,8 @@ int main()
 {
     int n;
     scanf("%d", &n);
-    do {
+    do
+    {
         printf("%d ", n);
         n--;
     }
