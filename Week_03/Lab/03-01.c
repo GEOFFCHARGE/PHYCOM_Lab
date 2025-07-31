@@ -1,6 +1,6 @@
 // Lab 03-01 String Format III
 
-# include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -26,4 +26,4 @@ int main()
     printf("Result double: %lf\n", result_double);
 
     return 0;
-};
+}
