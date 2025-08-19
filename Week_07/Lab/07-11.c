@@ -5,17 +5,18 @@
 
 int main()
 {
-    int totalSecond, queueLength, percentages;
-    long int totalMinute, processings, queueSecond = 0, currentings = 0;
+    int totalSecond;
+    long int totalMinute, totalTiming, queueSecond = 0, totalCurent = 0;
     scanf("%ld.%d", &totalMinute, &totalSecond);
-    long int totalTiming = totalMinute * 60 + totalSecond;
+	int queueLength;
     scanf("%d", &queueLength);
+    totalTiming = totalMinute * 60 + totalSecond;
     int musicNumber[queueLength], musicLength[queueLength];
-    char musicNaming[queueLength][52];
+    char musicNaming[queueLength][50];
     for (int i = 0; i < queueLength; i++)
     {
         int queue, minute, second;
-        char names[52];
+        char names[50];
         scanf(" Queue#%d <|> %[^<] <|> %d.%d", &queue, &names, &minute, &second);
         musicNumber[queue - 1] = queue;
         strcpy(musicNaming[queue - 1], names);
@@ -29,24 +30,26 @@ int main()
     }
     for (int i = 0; i < queueLength; i++)
     {
-        currentings += musicLength[i];
-        if (currentings >= totalTiming)
+        totalCurent += musicLength[i];
+        if (totalCurent >= totalTiming)
         {
+            int percent;
+            long int process;
             printf("Song Order: %d\n", musicNumber[i]);
             printf("Song Name: %s\n", musicNaming[i]);
-            processings = totalTiming - (currentings - musicLength[i]);
-            percentages = (int) ((double) processings / musicLength[i] * 100);
-            if (percentages == 0)
+            process = totalTiming - (totalCurent - musicLength[i]);
+            percent = (int) ((double) process / musicLength[i] * 100);
+            if (percent == 0)
             {
-                percentages = 1;
+                percent = 1;
             }
-            if (percentages == 100)
+            if (percent == 100)
             {
                 printf("Song Process: Complete\n");
             }
             else
             {
-                printf("Song Process: %d%%\n", percentages);
+                printf("Song Process: %d%%\n", percent);
             }
             break;
         }
