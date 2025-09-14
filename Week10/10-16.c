@@ -110,7 +110,8 @@ void delete(SinglyLinkedList* list, char* data)
     printf("Cannot delete, %s does not exist.\n", data);
 }
 
-int main() {
+int main()
+{
     SinglyLinkedList* mylist = createSinglyLinkedList();
     int n;
     char condition;

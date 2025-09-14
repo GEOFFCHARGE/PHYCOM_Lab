@@ -83,7 +83,8 @@ void insert_last(SinglyLinkedList* list, char* data)
     list->count++;
 }
 
-int main() {
+int main()
+{
     SinglyLinkedList* mylist = createSinglyLinkedList();
     int n;
     char condition;
