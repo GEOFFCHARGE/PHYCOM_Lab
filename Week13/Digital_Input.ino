@@ -9,13 +9,13 @@ void setup()
 
 void loop()
 {
-    if (digitalRead(BTN) == LOW)
+    if (digitalRead(BTN) == 0)
     {
-        digitalWrite(LED, HIGH);
+        digitalWrite(LED, 1);
     }
     else
     {
-        digitalWrite(LED, LOW);
+        digitalWrite(LED, 0);
     }
     delay(5);
 }

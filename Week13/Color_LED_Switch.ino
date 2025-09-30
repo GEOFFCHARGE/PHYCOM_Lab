@@ -19,29 +19,29 @@ void setup()
 
 void loop()
 {
-    if (digitalRead(BTN_RED) == LOW)
+    if (digitalRead(BTN_RED) == 0)
     {
-        digitalWrite(PIN_RED, LOW);
+        digitalWrite(PIN_RED, 0);
     }
     else
     {
-        digitalWrite(PIN_RED, HIGH);
+        digitalWrite(PIN_RED, 1);
     }
-    if (digitalRead(BTN_GREEN) == LOW)
+    if (digitalRead(BTN_GREEN) == 0)
     {
-        digitalWrite(PIN_GREEN, LOW);
-    }
-    else
-    {
-        digitalWrite(PIN_GREEN, HIGH);
-    }
-    if (digitalRead(BTN_BLUE) == LOW)
-    {
-        digitalWrite(PIN_BLUE, LOW);
+        digitalWrite(PIN_GREEN, 0);
     }
     else
     {
-        digitalWrite(PIN_BLUE, HIGH);
+        digitalWrite(PIN_GREEN, 1);
+    }
+    if (digitalRead(BTN_BLUE) == 0)
+    {
+        digitalWrite(PIN_BLUE, 0);
+    }
+    else
+    {
+        digitalWrite(PIN_BLUE, 1);
     }
     delay(5);
 }
