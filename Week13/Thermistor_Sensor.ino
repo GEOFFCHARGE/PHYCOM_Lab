@@ -19,5 +19,5 @@ void loop()
     Serial.print(": ");
     Serial.print(Temp);
     Serial.println(" C");
-    delay(1000); 
+    delay(1000);
 }

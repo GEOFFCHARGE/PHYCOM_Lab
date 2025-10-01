@@ -16,5 +16,5 @@ void loop()
     Serial.print(": ");
     Serial.print(voltage);
     Serial.println(" C");
-    delay(10);
+    delay(1000);
 }
