@@ -9,15 +9,14 @@ void setup()
 
 void loop()
 {
-    float Read = (5.00 / 1023.00) * analogRead(therPin);
-    float VR = 5 - Read;
-    float RT = Read / (VR / 330);
-    float ln = log(RT / 10000);
-    float Temp = (1 / ((ln / 3977) + (1 / (25 + 273.15)))) - 273.15;
+    float sensorValue = analogRead(therPin);
+    float vOut = sensorValue * 5.0 / 1023.0;
+    float r = (vOut * 330.0) / (5 - vOut);
+    float t = (298.15 * 4050.0) / (298.15 * log(r / 10000.0) + 4050.0);
     Serial.print("Temperature ");
     Serial.print(count++);
     Serial.print(": ");
-    Serial.print(Temp);
+    Serial.print(t - 273.15);
     Serial.println(" C");
     delay(1000);
 }
