@@ -28,8 +28,6 @@ byte degree[8] =
 
 const int tempPin = A0;
 
-int count = 0;
-
 void setup()
 {
     lcd.init();
